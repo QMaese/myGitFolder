@@ -1,5 +1,2 @@
-Plant 1,7
-Plant 2,10
-Plant 3,6
-Plant 4,9
-Plant 5,0
+plant 1,6
+plant 2,4
