@@ -1,4 +1,5 @@
-plant 1,10
-plant 2,4
+plant 1,13
+plant 2,9
 plant 3,8
-plant 4,5
+plant 4,7
+plant 5,5
