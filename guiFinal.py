@@ -2,7 +2,7 @@ import tkinter as tk
 import tkinter.font as tkFont
 import os
 <<<<<<< HEAD
-import Final_skeletal_code as fsc
+import final_skeletal_code as fsc
 import threading
 import board
 import RPi.GPIO as GPIO
