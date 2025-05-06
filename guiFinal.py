@@ -1,7 +1,8 @@
 import tkinter as tk
 import tkinter.font as tkFont
 import os
-import final_skeletal_code as fsc
+<<<<<<< HEAD
+import Final_skeletal_code as fsc
 import threading
 import board
 import RPi.GPIO as GPIO
@@ -16,6 +17,9 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(RED_LED,GPIO.OUT,initial=GPIO.LOW)
 GPIO.setup(GREEN_LED,GPIO.OUT,initial=GPIO.LOW)
 GPIO.setup(RELAY_PIN, GPIO.OUT, initial = GPIO.LOW)
+=======
+
+>>>>>>> 1261e02690c5d8d528a67e9207628e93b9abaf9a
 ## Function that waters plant
 def waterPlant():
     plant = setDisp.get()
@@ -25,7 +29,11 @@ def waterPlant():
         print(f"Watered {plant}!")
     else:
         print("Please select a plant first.")
+<<<<<<< HEAD
     fsc.water_plant()
+=======
+    ### Water pump functionality ###
+>>>>>>> 1261e02690c5d8d528a67e9207628e93b9abaf9a
     ### Recieve input from soil moisture sensor ###
 
 ## Function that adds plant to the database
@@ -68,8 +76,11 @@ def loadData():
                         label=plant,
                         command=lambda value=plant: whenSelected(value))
 
+<<<<<<< HEAD
 thread = threading.Thread(target = fsc.check, daemon = True)
 thread.start()
+=======
+>>>>>>> 1261e02690c5d8d528a67e9207628e93b9abaf9a
 
 #### MAIN PROGRAM ####
 
@@ -153,6 +164,9 @@ def resize_fonts(event):
 
 root.bind("<Configure>", resize_fonts)
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 1261e02690c5d8d528a67e9207628e93b9abaf9a
 root.mainloop()
